@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import CountdownSection from './components/CountdownSection';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import TickerBar from './components/TickerBar';
+import TimelineSection from './components/TimelineSection';
+import HistoriaSection from './components/HistoriaSection';
+import InfoSections from './components/infoSections';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Hero />
+      <CountdownSection />
+      <TickerBar />
+      <TimelineSection />
+      <HistoriaSection />
+      <InfoSections />
     </div>
   );
 }
