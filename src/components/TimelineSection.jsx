@@ -12,6 +12,7 @@ const timelineData = [
 const TimelineSection = () => {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [fallbackIcon, setFallbackIcon] = useState('');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -61,8 +62,11 @@ const TimelineSection = () => {
             >
               <div className="h-20 w-20 flex items-center justify-center mb-2">
                 <img
-                  src={item.icon}
+                  src={index === 5 ? fallbackIcon || item.icon : item.icon}
                   alt=""
+                  onError={() => {
+                    if (index === 5) setFallbackIcon('/linhatempo6.png');
+                  }}
                   className={`object-contain transition-transform hover:scale-105 ${
                     index === 1 || index === 3 || index === 5
                       ? 'h-16 w-auto max-h-20'
