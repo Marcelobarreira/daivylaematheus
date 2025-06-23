@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const timelineData = [
   { icon: '/linhatempo1.png', date: '10.02.16', text: 'A primeira\ntroca de olhares' },
@@ -6,14 +6,34 @@ const timelineData = [
   { icon: '/linhatempo4.png', date: '16.06.19', text: 'O pedido de\nnamoro' },
   { icon: '/linhatempo3.png', date: '25.05.20', text: 'Nascimento do Gabriel e a\nconcretização do nosso amor' },
   { icon: '/linhatempo5.png', date: '08.09.24', text: 'Pedido de\ncasamento' },
-  { icon: '/linhatempo6.png', date: '13.09.25', text: 'Nosso grande\ndia' },
+  { icon: '/icone_casamento.svg', date: '13.09.25', text: 'Nosso grande\ndia' },
 ];
 
 const TimelineSection = () => {
+  const ref = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
-      className="relative overflow-visible pt-8 pb-12 md:min-h-[350px]"
-      style={{ backgroundColor: '#bfbfbf' }}
+      ref={ref}
+      className={`relative overflow-visible pt-8 pb-12 md:min-h-[350px] transition-opacity duration-1000 ease-in-out transform ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+      }`}
+      style={{ backgroundColor: '#bfbfbf', fontFamily: '"Instrument Serif", serif' }}
     >
       <img
         src="/linhadetalhe.avif"
@@ -28,7 +48,7 @@ const TimelineSection = () => {
         className="hidden md:block object-cover pointer-events-none select-none z-0"
       />
 
-      <h2 className="text-center text-xl md:text-2xl font-serif italic text-black mb-4 relative z-10">
+      <h2 className="text-center text-xl md:text-2xl italic text-black mb-4 relative z-10">
         Linha do Tempo
       </h2>
 
@@ -44,25 +64,18 @@ const TimelineSection = () => {
                   src={item.icon}
                   alt=""
                   className={`object-contain transition-transform hover:scale-105 ${
-                    index === 1 || index === 3 || index === 5 
-                      ? 'h-16 w-auto max-h-20' 
+                    index === 1 || index === 3 || index === 5
+                      ? 'h-16 w-auto max-h-20'
                       : 'h-20 w-auto max-w-20'
                   }`}
                 />
               </div>
-              <p
-                className="text-sm md:text-base text-black"
-                style={{ fontFamily: '"Playfair Display", serif', fontWeight: 400 }}
-              >
+              <p className="text-sm md:text-base text-black font-normal">
                 {item.date}
               </p>
-              <p
-  className="text-[11px] md:text-xs mt-1 text-black leading-snug whitespace-pre-line"
-  style={{ fontFamily: '"Lora", serif', fontWeight: 400 }}
->
-  {item.text}
-</p>
-
+              <p className="text-[11px] md:text-xs mt-1 text-black leading-snug whitespace-pre-line font-normal">
+                {item.text}
+              </p>
             </div>
           ))}
         </div>

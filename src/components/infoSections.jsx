@@ -2,10 +2,10 @@ import React from "react";
 
 const InfoSections = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full">
+    <div className="flex flex-col md:flex-row w-full font-['Instrument_Serif']">
       {/* Sobre a Cerimônia */}
       <div className="flex-1 h-[450px] md:h-[550px] lg:h-[600px] flex flex-col items-center justify-center bg-neutral-700 text-white px-4 py-6">
-        <h2 className="text-2xl md:text-3xl font-serif text-center mb-2">
+        <h2 className="text-2xl md:text-3xl text-center mb-2">
           Sobre a<br />Cerimônia
         </h2>
         <div className="text-center mb-4 text-sm md:text-base">
@@ -23,7 +23,7 @@ const InfoSections = () => {
 
       {/* Confirme Presença */}
       <div className="flex-1 h-[450px] md:h-[550px] lg:h-[600px] flex flex-col items-center justify-center bg-black text-white px-4 py-6">
-        <h2 className="text-2xl md:text-3xl font-serif text-center mb-2">
+        <h2 className="text-2xl md:text-3xl text-center mb-2">
           Confirme<br />Presença
         </h2>
         <div className="text-center mb-4 text-sm md:text-base">
@@ -39,7 +39,7 @@ const InfoSections = () => {
 
       {/* Sugestão de Presentes */}
       <div className="flex-1 h-[450px] md:h-[550px] lg:h-[600px] flex flex-col items-center justify-center bg-neutral-300 text-white px-4 py-6">
-        <h2 className="text-2xl md:text-3xl font-serif text-center mb-2">
+        <h2 className="text-2xl md:text-3xl text-center mb-2">
           Sugestão de<br />Presentes
         </h2>
         <div className="text-center mb-4 text-sm md:text-base">

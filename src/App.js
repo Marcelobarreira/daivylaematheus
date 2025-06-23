@@ -16,7 +16,7 @@ import RSVP from './components/RSVP';
 function Home() {
   return (
     <>
-      <Header />
+      <Header withBackground/>
       <Hero />
       <CountdownSection />
       <TickerBar />

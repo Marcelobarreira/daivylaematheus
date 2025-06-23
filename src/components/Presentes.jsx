@@ -38,14 +38,15 @@ const Presentes = () => {
       )}
 
       <div className="flex-1 z-10 max-w-screen-2xl mx-auto px-6 md:px-16 py-32 flex flex-col md:flex-row justify-between items-center gap-12">
-        <div className="text-lg leading-relaxed max-w-xl md:max-w-md lg:max-w-lg text-center md:text-left">
-          <p className="mb-6">
-            O maior presente é ter você celebrando esse momento tão especial ao nosso lado.
-          </p>
-          <p>
-            Mas, se desejar nos presentear de alguma forma, aqui está o QR Code do nosso Pix.
-          </p>
-        </div>
+        <div className="text-lg leading-relaxed max-w-xl md:max-w-md lg:max-w-lg text-center md:text-left font-['Instrument_Serif']">
+  <p className="mb-6">
+    O maior presente é ter você celebrando esse momento tão especial ao nosso lado.
+  </p>
+  <p>
+    Mas, se desejar nos presentear de alguma forma, aqui está o QR Code do nosso Pix.
+  </p>
+</div>
+
 
         <div className="flex flex-col items-center gap-4 bg-white text-black p-6 rounded-xl shadow-md w-full max-w-sm">
           <div className="w-52 h-52 bg-gray-100 rounded-md flex items-center justify-center border">

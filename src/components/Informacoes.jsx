@@ -3,8 +3,8 @@ import Header from './Header';
 
 const Informacoes = () => {
   return (
-    <section id="informacoes" className="relative w-full min-h-screen flex flex-col pt-[80px]">
-      <Header withBackground />
+    <section id="informacoes" className="relative w-full min-h-screen flex flex-col pt-[72px]">
+      <Header withBackground="808080" />
 
       {/* Título da seção */}
       <div className="w-full bg-[#808080] text-center py-12 px-4 border-b border-black">
