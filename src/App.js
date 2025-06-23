@@ -12,6 +12,7 @@ import Informacoes from './components/Informacoes';
 import Footer from './components/Footer';
 import TimelineSection from './components/TimelineSection';
 import RSVP from './components/RSVP';
+import AudioToggle from './components/AudioToggle';
 
 function Home() {
   return (
