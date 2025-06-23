@@ -8,10 +8,10 @@ const Header = () => {
         <img src="/DM-logo.avif" alt="Logo DM" className="h-10 object-contain" />
 
         {/* Menu central */}
-        <nav className="hidden md:flex gap-10 lg:gap-20 text-white text-sm font-large">
-          <a href="#inicio" className="hover:opacity-80 transition">Início</a>
-          <a href="#presentes" className="hover:opacity-80 transition">Presentes</a>
-          <a href="#informacoes" className="hover:opacity-80 transition">Informações</a>
+        <nav className="hidden md:flex gap-10 lg:gap-20 text-white text-lg font-large">
+          <a href="/" className="hover:opacity-80 transition">Início</a>
+          <a href="/presentes" className="hover:opacity-80 transition">Presentes</a>
+          <a href="/informacoes" className="hover:opacity-80 transition">Informações</a>
         </nav>
 
         {/* RSVP */}
