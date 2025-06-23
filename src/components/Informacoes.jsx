@@ -1,9 +1,11 @@
 import React from 'react';
 import Header from './Header';
+import AudioToggle from './AudioToggle';
 
 const Informacoes = () => {
   return (
     <section id="informacoes" className="relative w-full min-h-screen flex flex-col pt-[72px]">
+      <AudioToggle />
       <Header withBackground="808080" />
 
       {/* Título da seção */}

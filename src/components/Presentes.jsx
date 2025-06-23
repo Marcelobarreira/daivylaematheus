@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import AudioToggle from './AudioToggle';
 
 const Presentes = () => {
   const chavePix =
@@ -26,6 +27,7 @@ const Presentes = () => {
         backgroundRepeat: 'no-repeat',
       }}
     >
+      <AudioToggle />
       <div className="absolute inset-0 bg-black/70 z-0 md:bg-[#808080] md:opacity-100" />
 
 

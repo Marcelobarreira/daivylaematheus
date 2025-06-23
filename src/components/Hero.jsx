@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import AudioToggle from './AudioToggle';
 
 const Hero = () => {
   const quoteWords = [
@@ -49,7 +48,6 @@ const Hero = () => {
             </span>
           ))}
         </p>
-      <AudioToggle/>
       </motion.div>
 
 

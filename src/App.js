@@ -14,10 +14,12 @@ import TimelineSection from './components/TimelineSection';
 import RSVP from './components/RSVP';
 import AudioToggle from './components/AudioToggle';
 
+
 function Home() {
   return (
     <>
       <Header withBackground/>
+      <AudioToggle />
       <Hero />
       <CountdownSection />
       <TickerBar />
