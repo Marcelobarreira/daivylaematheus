@@ -10,6 +10,7 @@ import HistoriaSection from './components/HistoriaSection';
 import InfoSections from './components/infoSections';
 import Presentes from './components/Presentes';
 import Informacoes from './components/Informacoes';
+import Footer from './components/Footer';
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
       <TimelineSection />
       <HistoriaSection />
       <InfoSections />
+      <Footer />
     </>
   );
 }

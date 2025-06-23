@@ -7,7 +7,7 @@ const HistoriaSection = () => {
         {/* Imagem Esquerda */}
         <div className="flex-shrink-0 flex justify-center md:justify-start">
           <img
-            src="/mainfoto.jpg"
+            src="/fotosection1.jpg"
             alt="Casal se beijando"
             className="w-[250px] h-[320px] md:w-[350px] md:h-[450px] object-cover rounded"
           />
@@ -15,18 +15,30 @@ const HistoriaSection = () => {
 
         {/* Centro - Texto */}
         <div className="flex-1 flex flex-col justify-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-2 text-center md:text-left">
+          <h2
+            className="text-3xl md:text-4xl mb-2 text-center md:text-left"
+            style={{ fontFamily: '"Playfair Display", serif', fontWeight: 600 }}
+          >
             Junte-se a nós
           </h2>
-          <h3 className="text-2xl md:text-3xl font-serif font-light mb-2 leading-tight text-center md:text-left">
+          <h3
+            className="text-2xl md:text-3xl mb-2 leading-tight text-center md:text-left"
+            style={{ fontFamily: '"Playfair Display", serif', fontWeight: 400 }}
+          >
             nessa jornada de <br className="hidden md:block" />
             alegria, graça e
           </h3>
-          <span className="text-3xl md:text-4xl italic font-serif font-light text-gray-800 mb-4 block text-center md:text-left">
+          <span
+            className="text-4xl md:text-6xl italic text-gray-800 mb-4 block text-center md:text-left"
+            style={{ fontFamily: '"Great Vibes", cursive' }}
+          >
             amor
           </span>
 
-          <div className="text-sm md:text-base text-justify text-gray-700 font-light space-y-4">
+          <div
+            className="text-sm md:text-base text-justify text-gray-800 space-y-4"
+            style={{ fontFamily: '"Lora", serif', fontWeight: 400 }}
+          >
             <p>
               Há 6 anos, nossos caminhos se cruzaram e, desde então, nunca mais andamos sozinhos. Juntos, construímos uma história repleta de amor, companheirismo e superação. Nosso maior presente chegou há 5 anos, com o nascimento do nosso filho, que trouxe ainda mais sentido e luz às nossas vidas.
             </p>
@@ -42,7 +54,7 @@ const HistoriaSection = () => {
         {/* Imagem Direita */}
         <div className="flex-shrink-0 flex justify-center md:items-end">
           <img
-            src="/diassection.jpg"
+            src="/fotosection2.jpg"
             alt="Casal se beijando 2"
             className="w-[250px] h-[180px] md:w-[350px] md:h-[250px] object-cover rounded grayscale"
           />

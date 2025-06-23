@@ -1,21 +1,20 @@
 import React from 'react';
 
 const timelineData = [
-  { icon: '/linhatempo1.avif', date: '10.02.16', text: 'A primeira troca de olhares' },
-  { icon: '/linhatempo2.avif', date: '11.04.19', text: 'O primeiro beijo' },
-  { icon: '/linhatempo3.avif', date: '16.06.19', text: 'O pedido de namoro' },
-  { icon: '/linhatempo4.avif', date: '25.05.20', text: 'Nascimento do Gabriel e a concretização do nosso amor' },
-  { icon: '/linhatempo5.avif', date: '08.09.24', text: 'Pedido de casamento' },
-  { icon: '/linhatempo6.avif', date: '15.09.25', text: 'Nosso grande dia' },
+  { icon: '/linhatempo1.png', date: '10.02.16', text: 'A primeira\ntroca de olhares' },
+  { icon: '/linhatempo2.png', date: '11.04.19', text: 'O primeiro\nbeijo' },
+  { icon: '/linhatempo4.png', date: '16.06.19', text: 'O pedido de\nnamoro' },
+  { icon: '/linhatempo3.png', date: '25.05.20', text: 'Nascimento do Gabriel e a\nconcretização do nosso amor' },
+  { icon: '/linhatempo5.png', date: '08.09.24', text: 'Pedido de\ncasamento' },
+  { icon: '/linhatempo6.png', date: '15.09.25', text: 'Nosso grande\ndia' },
 ];
 
 const TimelineSection = () => {
   return (
     <section
-      className="relative overflow-visible py-16 md:min-h-[350px]"
+      className="relative overflow-visible pt-8 pb-12 md:min-h-[350px]"
       style={{ backgroundColor: '#bfbfbf' }}
     >
-      {/* Linha decorativa visível apenas em md+ */}
       <img
         src="/linhadetalhe.avif"
         alt="Linha decorativa"
@@ -29,24 +28,35 @@ const TimelineSection = () => {
         className="hidden md:block object-cover pointer-events-none select-none z-0"
       />
 
-      <h2 className="text-center text-xl md:text-2xl font-serif italic text-black mb-6 relative z-10">
+      <h2 className="text-center text-xl md:text-2xl font-serif italic text-black mb-4 relative z-10">
         Linha do Tempo
       </h2>
 
-      <div className="relative z-10 flex flex-col items-center">
-        <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-6 md:gap-8 lg:gap-10 px-4 max-w-7xl w-full">
+      <div className="relative z-10 w-full max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-3 gap-x-2 place-items-center">
           {timelineData.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center max-w-[160px]"
+              className="flex flex-col items-center text-center w-full max-w-[150px] min-h-[220px]"
             >
               <img
                 src={item.icon}
                 alt=""
-                className="h-10 object-contain mb-2 transition-transform hover:scale-105"
+                className="h-20 w-20 object-contain mb-2 transition-transform hover:scale-105"
               />
-              <p className="text-xs font-medium text-black">{item.date}</p>
-              <p className="text-[11px] md:text-xs mt-1 text-black leading-snug">{item.text}</p>
+              <p
+                className="text-sm md:text-base text-black"
+                style={{ fontFamily: '"Playfair Display", serif', fontWeight: 400 }}
+              >
+                {item.date}
+              </p>
+              <p
+  className="text-[11px] md:text-xs mt-1 text-black leading-snug whitespace-pre-line"
+  style={{ fontFamily: '"Lora", serif', fontWeight: 400 }}
+>
+  {item.text}
+</p>
+
             </div>
           ))}
         </div>

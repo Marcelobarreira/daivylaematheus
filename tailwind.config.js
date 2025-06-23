@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         greatvibes: ['"Great Vibes"', 'cursive'],
+        elegant: ['"Playfair Display"', 'serif'],
       },
       keyframes: {
         marquee: {

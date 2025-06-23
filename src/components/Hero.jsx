@@ -8,7 +8,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover scale-150 transition-transform duration-700"
         style={{
           backgroundImage: "url('/mainfoto.jpg')",
-          backgroundPosition: '60% 10%' // direita (60%), abaixo (30%)
+          backgroundPosition: '55% 10%' // direita (60%), abaixo (30%)
         }}
       />
 
