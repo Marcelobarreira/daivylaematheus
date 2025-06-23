@@ -18,15 +18,16 @@ const Presentes = () => {
   return (
     <section
       id="presentes"
-      className="min-h-screen flex flex-col relative text-white"
+      className="min-h-screen flex flex-col relative text-white bg-black md:bg-black"
       style={{
-        backgroundImage: 'url("/aaa.png")', // substitua pelo caminho da imagem
+        backgroundImage: 'url("/aaa.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Camada escura sobre a imagem */}
-      <div className="absolute inset-0 bg-black/70 z-0" />
+      <div className="absolute inset-0 bg-black/70 z-0 md:bg-[#808080] md:opacity-100" />
+
 
       <Header />
 
@@ -36,7 +37,6 @@ const Presentes = () => {
         </div>
       )}
 
-      {/* Conteúdo principal */}
       <div className="flex-1 z-10 max-w-screen-2xl mx-auto px-6 md:px-16 py-32 flex flex-col md:flex-row justify-between items-center gap-12">
         <div className="text-lg leading-relaxed max-w-xl md:max-w-md lg:max-w-lg text-center md:text-left">
           <p className="mb-6">

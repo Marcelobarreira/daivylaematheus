@@ -7,7 +7,7 @@ const Informacoes = () => {
       <Header withBackground />
 
       {/* Título da seção */}
-      <div className="w-full bg-[#7A7A7A] text-center py-12 px-4 border-b border-black">
+      <div className="w-full bg-[#808080] text-center py-12 px-4 border-b border-black">
         <h2
           className="text-3xl md:text-4xl uppercase tracking-tight mb-1"
           style={{

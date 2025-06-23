@@ -30,7 +30,7 @@ const InfoSections = () => {
           Sua presença é essencial para nós. Não se esqueça de confirmar!
         </div>
         <a
-          href="#rsvp"
+          href="/rsvp"
           className="px-6 py-2 border border-white rounded-full text-sm md:text-base transition hover:bg-white hover:text-black"
         >
           RSVP

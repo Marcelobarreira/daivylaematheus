@@ -11,6 +11,7 @@ import Presentes from './components/Presentes';
 import Informacoes from './components/Informacoes';
 import Footer from './components/Footer';
 import TimelineSection from './components/TimelineSection';
+import RSVP from './components/RSVP';
 
 function Home() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/presentes" element={<Presentes />} />
         <Route path="/informacoes" element={<Informacoes />} />
+        <Route path="/rsvp" element={<RSVP />} />
       </Routes>
     </Router>
   );
