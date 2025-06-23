@@ -6,7 +6,7 @@ const timelineData = [
   { icon: '/linhatempo4.png', date: '16.06.19', text: 'O pedido de\nnamoro' },
   { icon: '/linhatempo3.png', date: '25.05.20', text: 'Nascimento do Gabriel e a\nconcretização do nosso amor' },
   { icon: '/linhatempo5.png', date: '08.09.24', text: 'Pedido de\ncasamento' },
-  { icon: '/linhatempo6.png', date: '15.09.25', text: 'Nosso grande\ndia' },
+  { icon: '/linhatempo6.png', date: '13.09.25', text: 'Nosso grande\ndia' },
 ];
 
 const TimelineSection = () => {
