@@ -39,11 +39,17 @@ const TimelineSection = () => {
               key={index}
               className="flex flex-col items-center text-center w-full max-w-[150px] min-h-[220px]"
             >
-              <img
-                src={item.icon}
-                alt=""
-                className="h-20 w-20 object-contain mb-2 transition-transform hover:scale-105"
-              />
+              <div className="h-20 w-20 flex items-center justify-center mb-2">
+                <img
+                  src={item.icon}
+                  alt=""
+                  className={`object-contain transition-transform hover:scale-105 ${
+                    index === 1 || index === 3 || index === 5 
+                      ? 'h-16 w-auto max-h-20' 
+                      : 'h-20 w-auto max-w-20'
+                  }`}
+                />
+              </div>
               <p
                 className="text-sm md:text-base text-black"
                 style={{ fontFamily: '"Playfair Display", serif', fontWeight: 400 }}

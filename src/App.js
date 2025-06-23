@@ -5,12 +5,12 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import CountdownSection from './components/CountdownSection';
 import TickerBar from './components/TickerBar';
-import TimelineSection from './components/TimelineSection';
 import HistoriaSection from './components/HistoriaSection';
 import InfoSections from './components/infoSections';
 import Presentes from './components/Presentes';
 import Informacoes from './components/Informacoes';
 import Footer from './components/Footer';
+import TimelineSection from './components/TimelineSection';
 
 function Home() {
   return (
@@ -23,6 +23,7 @@ function Home() {
       <HistoriaSection />
       <InfoSections />
       <Footer />
+      
     </>
   );
 }
